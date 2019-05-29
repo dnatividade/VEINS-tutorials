@@ -1,5 +1,5 @@
 # Sumo tutorial
-#### Tutorial to create a OpenStreetMap exported map and vehicle flow.
+#### Tutorial to create an exported OpenStreetMap map and flow of vehicles.
 
 ## Exporting map from OpenStreetMap
 - Open https://www.openstreetmap.org/ and navigate to the desired location;
