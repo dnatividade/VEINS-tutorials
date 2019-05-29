@@ -28,10 +28,10 @@
 - - Use the file "create-sumo-config1.sh" to create a file called *ufla.sumo.cfg* with the structure as follows:
 ```xml
 <configuration>
-               <input>
-               <net-file value="ufla.net.xml"/>
-               <additional-files value="ufla.poly.xml"/>
-               </input>
+	<input>
+		<net-file value="ufla.net.xml"/>
+		<additional-files value="ufla.poly.xml"/>
+	</input>
 </configuration>
 ```
 - Create a flow configuration file, called *myflow.rou.xml*, as follows:
@@ -47,5 +47,16 @@
 
 ![get-lanes](https://user-images.githubusercontent.com/43869367/58526377-30cf7500-81a5-11e9-9bed-fe8bb46dd131.gif)
 
+- Close *sumo-gui*;
 - Create the flows:
-- - 
+- - `duarouter -n ufla.net.xml -r myflow.rou.xml --randomize-flows -o ufla.rou.xml`
+- Put the line `<route-files value="ufla.rou.xml"/>` into the *ufla.sumo.cfg*, as follows:
+```xml
+<configuration>
+	<input>
+		<net-file value="ufla.net.xml"/>
+		<route-files value="ufla.rou.xml"/>
+		<additional-files value="ufla.poly.xml"/>
+	</input>
+</configuration>
+```
