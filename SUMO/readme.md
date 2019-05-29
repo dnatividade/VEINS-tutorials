@@ -4,7 +4,7 @@
 ## Exporting map from OpenStreetMap
 - Open https://www.openstreetmap.org/ and navigate to the desired location;
 - Click in *Export* -> *Manually select a different area*;
-- Select the area and click in *Export*;
+- Select the desired area and click in *Export*;
 
 ![Screenshot from 2019-05-28 21-55-40](https://user-images.githubusercontent.com/43869367/58521663-8bf86c00-8193-11e9-8d35-e91e582982c9.png)
 
@@ -21,6 +21,13 @@
 
 
 ## Create a flow of vehicles
-
+- Create a sumo configuration file:
+- - Use the file "create-sumo-config1.sh" to create a file called *map.sumo.cfg* with the structure as follows:
+> <configuration>
+>                <input>
+>                <net-file value="map.net.xml"/>
+>                <additional-files value="map.poly.xml"/>
+>                </input>
+> </configuration>
 
 
