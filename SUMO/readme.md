@@ -10,6 +10,7 @@
 
 - Save the map in OSM format, such as: *map.osm*.
 
+
 ## Importing map to SUMO
 - Convert OSM file to SUMO format:
 - - `netconvert --osm-files map.osm -o map.net.xml`
@@ -17,4 +18,9 @@
 - - this file is a template for creating map polygons, such as buildings, trees, etc.
 - Create map polygons (using the template copied before):
 - - `polyconvert --net-file map.net.xml --osm-files map.osm --type-file osmPolyconvert.typ.xml -o map.poly.xml`
+
+
+## Create a flow of vehicles
+
+
 
