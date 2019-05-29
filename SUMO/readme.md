@@ -36,4 +36,4 @@
 ```
 - Open SUMO-GUI to get lanes names to create the flows:
 - - `sumo-gui map.sumo.cfg`
-- - Capture the names as the animation:
+- - Capture the lanes names as the animation:
