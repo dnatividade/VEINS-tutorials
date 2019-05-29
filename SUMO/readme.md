@@ -11,3 +11,5 @@
 ## Importing map to SUMO
 - Copy *osmPolyconvert.typ.xml* file (in this GitHub directory) to your project directory;
 - - this file is a template for creating map polygons, such as buildings, trees, etc.
+- Convert OSM file to SUMO format:
+- - `netconvert --osm-files ufla.osm -o ufla.net.xml`
