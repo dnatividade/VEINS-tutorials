@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Tue May 28 21:28:12 2019 by SUMO duarouter Version 0.30.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="ufla.net.xml"/>
+        <route-files value="myflow.rou.xml"/>
+    </input>
+
+    <output>
+        <output-file value="ufla.rou.xml"/>
+    </output>
+
+    <processing>
+        <randomize-flows value="true"/>
+    </processing>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="s60" speedFactor="3.00"/>
+    <vehicle id="node1.0" type="s60" depart="9.65" departLane="random" color="red">
+        <routeDistribution last="0">
+            <route cost="1.64" probability="1.00000000" edges="291265586"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="node3.0" type="s60" depart="48.12" departLane="random" color="green">
+        <routeDistribution last="0">
+            <route cost="76.36" probability="1.00000000" edges="266454613 292489679#0 292489679#1 292489679#2 292489679#3 367178417 292489659#3 320052861#0 367178403#1 367178402#1 291265581#12 291265581#13 291265581#14 291265581#15 291265581#16"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="node2.0" type="s60" depart="60.35" departLane="random" color="white">
+        <routeDistribution last="0">
+            <route cost="21.25" probability="1.00000000" edges="266455682#12 266455682#13 291263821#0 291263821#1 291263821#2"/>
+        </routeDistribution>
+    </vehicle>
+</routes>
