@@ -34,8 +34,18 @@
                </input>
 </configuration>
 ```
+- Create a flow configuration file, called *myflow.rou.xml*, as follows:
+```xml
+<routes>
+	<flow id="flow1" color="red"   begin="0" end="120" number="10" departLane="random" from="" to=""/>
+	<flow id="flow2" color="green" begin="0" end="120" number="15" departLane="random" from="" to=""/>
+</routes>
+```
 - Open SUMO-GUI to get lanes names to create the flows:
 - - `sumo-gui ufla.sumo.cfg`
-- - Copy the lanes names and paste into the *ufla.sumo.cfg*, such as the animation:
+- - Copy the lanes names and paste into the *myflow.rou.xml*, such as the animation:
+
 ![get-lanes](https://user-images.githubusercontent.com/43869367/58526377-30cf7500-81a5-11e9-9bed-fe8bb46dd131.gif)
 
+- Create the flows:
+- - 
