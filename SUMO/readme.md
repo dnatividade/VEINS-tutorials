@@ -8,7 +8,7 @@
 
 ![Screenshot from 2019-05-28 21-55-40](https://user-images.githubusercontent.com/43869367/58521663-8bf86c00-8193-11e9-8d35-e91e582982c9.png)
 
-- Save the map in OSM format, such as: *map.osm*.
+- Save the map in OSM format, such as: *ufla.osm*.
 
 
 ## Importing map to SUMO
@@ -17,7 +17,7 @@
 - Copy *osmPolyconvert.typ.xml* file (in this GitHub directory) to your project directory;
 - - this file is a template for creating map polygons, such as buildings, trees, etc.
 - Create map polygons (using the template copied before):
-- - `polyconvert --net-file map.net.xml --osm-files map.osm --type-file osmPolyconvert.typ.xml -o map.poly.xml`
+- - `polyconvert --net-file ufla.net.xml --osm-files ufla.osm --type-file osmPolyconvert.typ.xml -o ufla.poly.xml`
 
 
 ## Create a flow of vehicles
@@ -25,15 +25,17 @@
 - - `export SUMO_HOME=~/src/sumo/`
 - - OBS.: Check correct path from your SUMO installation;
 - Create a sumo configuration file:
-- - Use the file "create-sumo-config1.sh" to create a file called *map.sumo.cfg* with the structure as follows:
+- - Use the file "create-sumo-config1.sh" to create a file called *ufla.sumo.cfg* with the structure as follows:
 ```xml
 <configuration>
                <input>
-               <net-file value="map.net.xml"/>
-               <additional-files value="map.poly.xml"/>
+               <net-file value="ufla.net.xml"/>
+               <additional-files value="ufla.poly.xml"/>
                </input>
 </configuration>
 ```
 - Open SUMO-GUI to get lanes names to create the flows:
-- - `sumo-gui map.sumo.cfg`
-- - Capture the lanes names as the animation:
+- - `sumo-gui ufla.sumo.cfg`
+- - Copy the lanes names and paste into the *ufla.sumo.cfg*, such as the animation:
+![get-lanes](https://user-images.githubusercontent.com/43869367/58526377-30cf7500-81a5-11e9-9bed-fe8bb46dd131.gif)
+
