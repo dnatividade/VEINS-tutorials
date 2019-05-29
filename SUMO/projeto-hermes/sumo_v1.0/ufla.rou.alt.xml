@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Wed May 29 16:41:34 2019 by Eclipse SUMO duarouter Version 1.2.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="ufla.net.xml"/>
+        <route-files value="myflow.rou.xml"/>
+    </input>
+
+    <output>
+        <output-file value="ufla.rou.xml"/>
+        <alternatives-output value="ufla.rou.alt.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="speed60km" speedFactor="normc(3.00,0.00)"/>
+    <vehicle id="myflow1.0" type="speed60km" depart="0.00" departLane="random" color="red">
+        <routeDistribution last="0">
+            <route cost="1.64" probability="1.00000000" edges="291265586"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="myflow3.0" type="speed60km" depart="10.00" departLane="random" color="white">
+        <routeDistribution last="0">
+            <route cost="23.90" probability="1.00000000" edges="266455682#12 266455682#13 291263821#0 291263821#1 291263821#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="myflow2.0" type="speed60km" depart="16.00" departLane="random" color="green">
+        <routeDistribution last="0">
+            <route cost="88.94" probability="1.00000000" edges="266454613 292489679#0 292489679#1 292489679#2 292489679#3 367178417 292489659#3 320052861#0 367178403#1 367178402#1 291265581#12 291265581#13 291265581#14 291265581#15 291265581#16"/>
+        </routeDistribution>
+    </vehicle>
+</routes>

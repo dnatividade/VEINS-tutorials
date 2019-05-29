@@ -1,0 +1,18 @@
+<!--
+
+Example of generation of flow in SUMO
+#dnatividade
+
+-->
+
+<routes>
+	<vType id="speed20km" speedFactor ="1" speedDev="0"> </vType>
+	<vType id="speed40km" speedFactor ="2" speedDev="0"> </vType>
+	<vType id="speed60km" speedFactor ="3" speedDev="0"> </vType>
+
+	<flow id="myflow1" type="speed60km" color="red"   begin="0" number="1" departLane="random" from="291265586"/>
+	<flow id="myflow3" type="speed60km" color="white" begin="10" end="120" number="1" departLane="random" from="266455682#12" to="291263821#2"/>
+	<flow id="myflow2" type="speed60km" color="green" begin="16"  end="60"  number="1" departLane="random" from="266454613"    to="291265581#16"/> 
+</routes>
+
+

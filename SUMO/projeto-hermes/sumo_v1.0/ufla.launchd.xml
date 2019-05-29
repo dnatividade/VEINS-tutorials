@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- debug config -->
+<launch>
+	<copy file="ufla.net.xml" />
+	<copy file="ufla.rou.xml" />
+	<copy file="ufla.poly.xml" />
+	<copy file="ufla.sumo.cfg" type="config" />
+</launch>
+
