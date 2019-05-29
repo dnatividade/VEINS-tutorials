@@ -23,7 +23,7 @@
 ## Create a flow of vehicles
 - Create a sumo configuration file:
 - - Use the file "create-sumo-config1.sh" to create a file called *map.sumo.cfg* with the structure as follows:
-```shell
+```xml
 <configuration>
                <input>
                <net-file value="map.net.xml"/>
