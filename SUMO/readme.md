@@ -1,4 +1,7 @@
 # Sumo tutorial
+#### Tutorial to create map, exporting from OpenStreetMap, and create a vehicle flow.
+#### In this exemple, we are use a 
+
 ## Exporting map from OpenStreetMap
 - Open https://www.openstreetmap.org/ and navigate to the desired location;
 - Click in *Export* -> *Manually select a different area*;
@@ -6,10 +9,13 @@
 
 ![Screenshot from 2019-05-28 21-55-40](https://user-images.githubusercontent.com/43869367/58521663-8bf86c00-8193-11e9-8d35-e91e582982c9.png)
 
-- Save the map in OSM format, such as: *ufla.osm*.
+- Save the map in OSM format, such as: *map.osm*.
 
 ## Importing map to SUMO
-- Copy *osmPolyconvert.typ.xml* file (in this GitHub directory) to your project directory;
-- - this file is a template for creating map polygons, such as buildings, trees, etc.
 - Convert OSM file to SUMO format:
 - - `netconvert --osm-files ufla.osm -o ufla.net.xml`
+- Copy *osmPolyconvert.typ.xml* file (in this GitHub directory) to your project directory;
+- - this file is a template for creating map polygons, such as buildings, trees, etc.
+- Create map polygons (using the template copied before):
+- - `polyconvert --net-file map.net.xml --osm-files map.osm --type-file osmPolyconvert.typ.xml -o map.poly.xml`
+
