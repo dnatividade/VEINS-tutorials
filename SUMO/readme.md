@@ -21,6 +21,9 @@
 
 
 ## Create a flow of vehicles
+- Create an environment variable named *SUMO_HOME*, with the SUMO path, as follows:
+- - `export SUMO_HOME=~/src/sumo/`
+- - OBS.: Check correct path from your SUMO installation;
 - Create a sumo configuration file:
 - - Use the file "create-sumo-config1.sh" to create a file called *map.sumo.cfg* with the structure as follows:
 ```xml
@@ -31,4 +34,6 @@
                </input>
 </configuration>
 ```
-
+- Open SUMO-GUI to get lanes names to create the flows:
+- - `sumo-gui map.sumo.cfg`
+- - Capture the names as the animation:
