@@ -41,7 +41,7 @@
 	<flow id="flow2" color="green" begin="0" end="120" number="15" departLane="random" from="" to=""/>
 </routes>
 ```
-- Open SUMO-GUI to get lanes names to create the flows:
+- Open SUMO-GUI to get the lane names to create the flows:
 - - `sumo-gui ufla.sumo.cfg`
 - - Copy the lanes names and paste into the *myflow.rou.xml*, such as the animation:
 
