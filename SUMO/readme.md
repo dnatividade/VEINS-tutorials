@@ -17,8 +17,9 @@
 - - OBS.: Check correct path from your SUMO installation;
 - Convert OSM file to SUMO format:
 - - `netconvert --osm-files ufla.osm -o ufla.net.xml`
-- Copy *osmPolyconvert.typ.xml* file (in this GitHub directory) to your project directory;
-- - this file is a template for creating map polygons, such as buildings, trees, etc.
+- Copy *osmPolyconvert.typ.xml* file to your project directory;
+- - this file is a template for creating map polygons, such as buildings, trees, etc;
+- - this file can be found in the directory in the sumo directory, at: data/typemap/. Or you can download it here. 
 - Create map polygons (using the template copied before):
 - - `polyconvert --net-file ufla.net.xml --osm-files ufla.osm --type-file osmPolyconvert.typ.xml -o ufla.poly.xml`
 
@@ -31,8 +32,7 @@
 	<flow id="flow2" color="green" begin="0" end="120" number="15" departLane="random" from="" to=""/>
 </routes>
 ```
-- Create a sumo configuration file:
-- - Use the file "create-sumo-config1.sh" to create a file called *ufla.sumo.cfg* with the structure as follows:
+- Create a sumo configuration file called *ufla.sumo.cfg* with the structure as follows:
 ```xml
 <configuration>
 	<input>
