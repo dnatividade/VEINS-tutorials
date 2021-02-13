@@ -12,6 +12,9 @@
 
 
 ## Importing map to SUMO
+- First of all, create an environment variable named *SUMO_HOME*, with the SUMO path, as follows:
+- - `export SUMO_HOME=~/src/sumo/`
+- - OBS.: Check correct path from your SUMO installation;
 - Convert OSM file to SUMO format:
 - - `netconvert --osm-files ufla.osm -o ufla.net.xml`
 - Copy *osmPolyconvert.typ.xml* file (in this GitHub directory) to your project directory;
@@ -21,9 +24,13 @@
 
 
 ## Create a flow of vehicles
-- Create an environment variable named *SUMO_HOME*, with the SUMO path, as follows:
-- - `export SUMO_HOME=~/src/sumo/`
-- - OBS.: Check correct path from your SUMO installation;
+- Create a flow configuration file, called *myflow.rou.xml*, as follows:
+```xml
+<routes>
+	<flow id="flow1" color="red"   begin="0" end="120" number="10" departLane="random" from="" to=""/>
+	<flow id="flow2" color="green" begin="0" end="120" number="15" departLane="random" from="" to=""/>
+</routes>
+```
 - Create a sumo configuration file:
 - - Use the file "create-sumo-config1.sh" to create a file called *ufla.sumo.cfg* with the structure as follows:
 ```xml
@@ -33,13 +40,6 @@
 		<additional-files value="ufla.poly.xml"/>
 	</input>
 </configuration>
-```
-- Create a flow configuration file, called *myflow.rou.xml*, as follows:
-```xml
-<routes>
-	<flow id="flow1" color="red"   begin="0" end="120" number="10" departLane="random" from="" to=""/>
-	<flow id="flow2" color="green" begin="0" end="120" number="15" departLane="random" from="" to=""/>
-</routes>
 ```
 - Open SUMO-GUI to get the lane names to create the flows:
 - - `sumo-gui ufla.sumo.cfg`
