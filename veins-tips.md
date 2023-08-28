@@ -9,6 +9,10 @@
 https://groups.google.com/forum/#!topic/omnetpp/m9rFqQ92-OA
 https://groups.google.com/forum/#!topic/omnetpp/7MzAR3iqy74
 https://stackoverflow.com/questions/55172247/change-the-transmission-signal-strength-for-a-specific-set-of-vehicles-during-th/55173632#55173632
+
+NEW
+https://stackoverflow.com/questions/58042512/how-to-fix-the-transmission-range-of-rsu-1000m-and-vehicles300m-in-veins-5-0
+https://stackoverflow.com/questions/55172247/change-the-transmission-signal-strength-for-a-specific-set-of-vehicles-during-th
 ```
 
 **Seed and random numbers**
@@ -66,6 +70,13 @@ https://docs.omnetpp.org/tutorials/tictoc/part5/
 ```
 Map and Multimap
 https://gist.github.com/marcoscastro/34ceed299b0165434384
+
+Unordered MAP
+https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/
+
+Hash table implementation
+https://www.digitalocean.com/community/tutorials/hash-table-in-c-plus-plus
+
 ```
 
 **Vanet Researchers**
