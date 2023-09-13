@@ -88,7 +88,6 @@ Azza Ben Mosbah
 https://www.researchgate.net/profile/Azza_Ben_Mosbah
 ```
 
-
 ### DICAS
 ```
 - Para rodar em linha de comando, é necessário alterar o compilador para o modo "relesase": no eclipse, clique com o botão direito na pasta raíz do projeto -> Build COnfigurations -> Set Active -> gcc-release
@@ -99,5 +98,18 @@ https://www.researchgate.net/profile/Azza_Ben_Mosbah
 (Source: dnatividade (2019)
 ```
 
-
+### Métodos diversos
+```
+ traciVehicle->slowDown(2, simTime())
+ traciVehicle->getMaxSpeed()
+ traciVehicle->setMaxSpeed(30)
+ traciVehicle->getSpeed()
+ traciVehicle->setSpeed(0)
+ 
+ traci->lane("30350450#1_0").getMaxSpeed()
+ traci->lane("30350450#1_0").getWidth()
+ getLaneId();
+ traciVehicle->setMaxSpeed(30);
+ traciVehicle->setSpeed(30);
+```
 
