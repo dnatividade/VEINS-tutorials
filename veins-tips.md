@@ -111,5 +111,8 @@ https://www.researchgate.net/profile/Azza_Ben_Mosbah
  getLaneId();
  traciVehicle->setMaxSpeed(30);
  traciVehicle->setSpeed(30);
+
+	myMacAddress = getParentModule()->getParentModule()->getIndex();
+	myId = getParentModule()->getParentModule()->getFullPath();
 ```
 
