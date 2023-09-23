@@ -20,5 +20,5 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
-## Download and run
+## Download and run (manually)
 #sudo docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
